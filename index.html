@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <button class="button" id="startButton" onClick="stopwatch.start();">
+          Start
+        </button>
+        <button class="button" id="pauseButton" onClick="stopwatch.pause();">
+          Pause
+        </button>
+        <button class="button" id="resumeButton" onClick="stopwatch.resume();">
+          Resume
+        </button>
+        <button class="button" id="resetButton" onClick="stopwatch.reset();">
+          Reset
+        </button>
+      </nav>
+      <div class="stopwatchContainer">
+        <p id="stopwatch" class="stopwatch"></p>
+      </div>
+      <hr id="hr" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
